@@ -1,9 +1,10 @@
 "use client";
-import Logo from "../../../public/images/logo/logo.png";
+import Logo from "../../../public/images/logo.png";
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { CgMenuRightAlt } from "react-icons/cg";
+import { FaRegWindowClose } from "react-icons/fa";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
@@ -18,7 +19,7 @@ function Navbar() {
         {/* mobile */}
         <div className={`mobile-navbar ${nav ? "open-nav" : ""}`}>
           <div onClick={openNav} className="mobile-navbar__close">
-            <i className="fa-solid fa-xmark"></i>
+            <FaRegWindowClose />
           </div>
           <ul className="mobile-navbar__links">
             <li>
@@ -56,7 +57,14 @@ function Navbar() {
 
         {/* desktop */}
 
-        <div className="navbar">
+        <div
+          style={{
+            background: "#fa4226",
+            position: "fixed",
+            zIndex: "9",
+          }}
+          className="navbar "
+        >
           <div className="navbar__img">
             <Link href="/" onClick={() => window.scrollTo(0, 0)}>
               <Image src={Logo} alt="logo-img" />

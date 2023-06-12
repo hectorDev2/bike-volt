@@ -7,7 +7,7 @@ import Link from "next/link";
 function Hero() {
   return (
     <>
-      <section id="home" className="hero-section">
+      <section id="home" className="hero-section mt-[10rem]">
         <div className="container">
           <Image className="bg-shape" src={BgShape} alt="bg-shape" />
           <div className="hero-content">
