@@ -96,7 +96,7 @@ function Navbar() {
             </li>
             <li>
               {" "}
-              <Link className="team-link" href="/team">
+              <Link className="team-link" href="/equipo">
                 Our Team
               </Link>
             </li>
