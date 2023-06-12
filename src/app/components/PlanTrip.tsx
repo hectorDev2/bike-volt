@@ -1,8 +1,8 @@
 import Image from "next/image";
-import SelectCar from "../../../public/images/plan/icon1.png";
+import SelectCar from "../../../public/images/plan/motorcycle.gif";
 
-import Contact from "../../../public/images/plan/icon2.png";
-import Drive from "../../../public/images/plan/icon3.png";
+import Contact from "../../../public/images/plan/talk.gif";
+import Drive from "../../../public/images/plan/speed.gif";
 
 function PlanTrip() {
   return (
@@ -11,22 +11,29 @@ function PlanTrip() {
         <div className="container">
           <div className="plan-container">
             <div className="plan-container__title">
-              <h3>Plan your trip now</h3>
-              <h2>Quick & easy car rental</h2>
+              <h3>Regala movilidad sustentable</h3>
+              <h2>Facil y barato de adquirir</h2>
             </div>
 
             <div className="plan-container__boxes">
               <div className="plan-container__boxes__box">
-                <Image src={SelectCar} alt="icon_img" />
-                <h3>Select Car</h3>
-                <p>
-                  We offers a big range of vehicles for all your driving needs.
-                  We have the perfect car to meet your needs
-                </p>
+                <Image
+                  style={{ margin: "0 auto" }}
+                  width={60}
+                  height={60}
+                  src={SelectCar}
+                  alt="icon_img"
+                />
+                <h3>Selecciona tu modelo</h3>
+                <p>Ofrecemos una gama de modelos para todos los estilos</p>
               </div>
 
               <div className="plan-container__boxes__box">
-                <Image src={Contact} alt="icon_img" />
+                <Image
+                  style={{ margin: "0 auto" }}
+                  src={Contact}
+                  alt="icon_img"
+                />
                 <h3>Contact Operator</h3>
                 <p>
                   Our knowledgeable and friendly operators are always ready to
@@ -35,7 +42,11 @@ function PlanTrip() {
               </div>
 
               <div className="plan-container__boxes__box">
-                <Image src={Drive} alt="icon_img" />
+                <Image
+                  style={{ margin: "0 auto" }}
+                  src={Drive}
+                  alt="icon_img"
+                />
                 <h3>Let's Drive</h3>
                 <p>
                   Whether you're hitting the open road, we've got you covered

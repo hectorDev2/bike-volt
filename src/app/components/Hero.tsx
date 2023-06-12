@@ -7,7 +7,7 @@ import Link from "next/link";
 function Hero() {
   return (
     <>
-      <section id="home" className="hero-section">
+      <section id="home" className="hero-section mt-[10rem]">
         <div className="container">
           <Image className="bg-shape" src={BgShape} alt="bg-shape" />
           <div className="hero-content">
@@ -22,10 +22,10 @@ function Hero() {
               </p>
               <div className="hero-content__text__btns">
                 <Link className="hero-content__text__btns__book-ride" href="/">
-                  Book Ride &nbsp; <i className="fa-solid fa-circle-check"></i>
+                  Reservalo &nbsp; <i className="fa-solid fa-circle-check"></i>
                 </Link>
                 <Link className="hero-content__text__btns__learn-more" href="/">
-                  Learn More &nbsp; <i className="fa-solid fa-angle-right"></i>
+                  leer mas &nbsp; <i className="fa-solid fa-angle-right"></i>
                 </Link>
               </div>
             </div>

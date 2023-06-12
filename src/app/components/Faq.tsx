@@ -1,17 +1,18 @@
+"use client";
 import { useState } from "react";
-
+import { BsArrowDownShort } from "react-icons/bs";
 function Faq() {
   const [activeQ, setActiveQ] = useState("q1");
 
-  const openQ = (id) => {
+  const openQ = (id: string) => {
     setActiveQ(activeQ === id ? "" : id);
   };
 
-  const getClassAnswer = (id) => {
+  const getClassAnswer = (id: string) => {
     return activeQ === id ? "active-answer" : "";
   };
 
-  const getClassQuestion = (id) => {
+  const getClassQuestion = (id: string) => {
     return activeQ === id ? "active-question" : "";
   };
 
@@ -37,7 +38,7 @@ function Faq() {
                   className={`faq-box__question  ${getClassQuestion("q1")}`}
                 >
                   <p>1. What is special about comparing rental car deals?</p>
-                  <i className="fa-solid fa-angle-down"></i>
+                  <BsArrowDownShort size={32} />
                 </div>
                 <div
                   id="q1"
@@ -60,7 +61,7 @@ function Faq() {
                   className={`faq-box__question ${getClassQuestion("q2")}`}
                 >
                   <p>2. How do I find the car rental deals?</p>
-                  <i className="fa-solid fa-angle-down"></i>
+                  <BsArrowDownShort size={32} />
                 </div>
                 <div
                   id="q2"
@@ -83,7 +84,7 @@ function Faq() {
                   className={`faq-box__question ${getClassQuestion("q3")}`}
                 >
                   <p>3. How do I find such low rental car prices?</p>
-                  <i className="fa-solid fa-angle-down"></i>
+                  <BsArrowDownShort size={32} />
                 </div>
                 <div
                   id="q3"
