@@ -10,11 +10,11 @@ function Testimonials() {
           <div className="testimonials-content">
             <div className="testimonials-content__title">
               <h4>Reviewed by People</h4>
-              <h2>Client's Testimonials</h2>
+              <h2>Clients Testimonials</h2>
               <p>
-                Discover the positive impact we've made on the our clients by
+                Discover the positive impact weve made on the our clients by
                 reading through their testimonials. Our clients have experienced
-                our service and results, and they're eager to share their
+                our service and results, and theyre eager to share their
                 positive experiences with you.
               </p>
             </div>
@@ -25,9 +25,9 @@ function Testimonials() {
                   <i className="fa-solid fa-quote-right"></i>
                 </span>
                 <p>
-                  "We rented a car from this website and had an amazing
+                  We rented a car from this website and had an amazing
                   experience! The booking was easy and the rental rates were
-                  very affordable. "
+                  very affordable.
                 </p>
                 <div className="all-testimonials__box__name">
                   <div className="all-testimonials__box__name__profile">
@@ -45,8 +45,8 @@ function Testimonials() {
                   <i className="fa-solid fa-quote-right"></i>
                 </span>
                 <p>
-                  "The car was in great condition and made our trip even better.
-                  Highly recommend for this car rental website!"
+                  The car was in great condition and made our trip even better.
+                  Highly recommend for this car rental website!
                 </p>
                 <div className="all-testimonials__box__name">
                   <div className="all-testimonials__box__name__profile">

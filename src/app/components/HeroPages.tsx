@@ -1,6 +1,6 @@
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
-function HeroPages({ name }) {
+function HeroPages({ name }: { name: string }) {
   return (
     <>
       <section className="hero-pages">
@@ -9,7 +9,7 @@ function HeroPages({ name }) {
           <div className="hero-pages__text">
             <h3>{name}</h3>
             <p>
-              <Link to="/">Home</Link> / {name}
+              <Link href="/">Home</Link> / {name}
             </p>
           </div>
         </div>

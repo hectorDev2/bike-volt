@@ -21,10 +21,10 @@ function Footer() {
               <li>
                 <a
                   href="mailto: 
-                carrental@gmail.com"
+                ph.barazorda@gmail.com"
                 >
                   <i className="fa-solid fa-envelope"></i>
-                  &nbsp; carrental@gmail.com
+                  &nbsp; ph.barazorda@gmail.com
                 </a>
               </li>
 
@@ -33,9 +33,9 @@ function Footer() {
                   style={{ fontSize: "14px" }}
                   target="_blank"
                   rel="noreferrer"
-                  href="https://xpeedstudio.com/"
+                  href="https://v2-portfolio-liard.vercel.app/"
                 >
-                  Design by XpeedStudio
+                  Design by hectorDev
                 </a>
               </li>
             </ul>

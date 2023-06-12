@@ -5,6 +5,7 @@ import CarToyota from "../images/cars-big/toyotacamry.jpg";
 import CarBmw from "../images/cars-big/bmw320.jpg";
 import CarMercedes from "../images/cars-big/benz.jpg";
 import CarPassat from "../images/cars-big/passatcc.jpg";
+import Image from "next/image";
 
 function BookCar() {
   const [modal, setModal] = useState(false); //  class - active-modal
@@ -63,7 +64,7 @@ function BookCar() {
   // open modal when all inputs are fulfilled
   const openModal = (e: any) => {
     e.preventDefault();
-    const errorMsg = document.querySelector(".error-message");
+    const errorMsg: any = document.querySelector(".error-message");
     if (
       pickUp === "" ||
       dropOff === "" ||
@@ -74,7 +75,7 @@ function BookCar() {
       errorMsg.style.display = "flex";
     } else {
       setModal(!modal);
-      const modalDiv = document.querySelector(".booking-modal");
+      const modalDiv: any = document.querySelector(".booking-modal");
       modalDiv.scroll(0, 0);
       errorMsg.style.display = "none";
     }
@@ -90,32 +91,32 @@ function BookCar() {
   }, [modal]);
 
   // confirm modal booking
-  const confirmBooking = (e) => {
+  const confirmBooking = (e: any) => {
     e.preventDefault();
     setModal(!modal);
-    const doneMsg = document.querySelector(".booking-done");
+    const doneMsg: any = document.querySelector(".booking-done");
     doneMsg.style.display = "flex";
   };
 
   // taking value of booking inputs
-  const handleCar = (e) => {
+  const handleCar = (e: any) => {
     setCarType(e.target.value);
     setCarImg(e.target.value);
   };
 
-  const handlePick = (e) => {
+  const handlePick = (e: any) => {
     setPickUp(e.target.value);
   };
 
-  const handleDrop = (e) => {
+  const handleDrop = (e: any) => {
     setDropOff(e.target.value);
   };
 
-  const handlePickTime = (e) => {
+  const handlePickTime = (e: any) => {
     setPickTime(e.target.value);
   };
 
-  const handleDropTime = (e) => {
+  const handleDropTime = (e: any) => {
     setDropTime(e.target.value);
   };
 
@@ -146,7 +147,7 @@ function BookCar() {
 
   // hide message
   const hideMessage = () => {
-    const doneMsg = document.querySelector(".booking-done");
+    const doneMsg: any = document.querySelector(".booking-done");
     doneMsg.style.display = "none";
   };
 
@@ -330,7 +331,7 @@ function BookCar() {
             <h5>
               <span>Car -</span> {carType}
             </h5>
-            {imgUrl && <img src={imgUrl} alt="car_img" />}
+            {imgUrl && <Image src={imgUrl} alt="car_img" />}
           </div>
         </div>
         {/* personal info */}
