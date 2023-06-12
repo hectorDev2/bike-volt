@@ -22,10 +22,10 @@ function Hero() {
               </p>
               <div className="hero-content__text__btns">
                 <Link className="hero-content__text__btns__book-ride" href="/">
-                  Book Ride &nbsp; <i className="fa-solid fa-circle-check"></i>
+                  Reservalo &nbsp; <i className="fa-solid fa-circle-check"></i>
                 </Link>
                 <Link className="hero-content__text__btns__learn-more" href="/">
-                  Learn More &nbsp; <i className="fa-solid fa-angle-right"></i>
+                  leer mas &nbsp; <i className="fa-solid fa-angle-right"></i>
                 </Link>
               </div>
             </div>

@@ -59,7 +59,7 @@ function Navbar() {
 
         <div
           style={{
-            background: "#fa4226",
+            background: "#ff4d30",
             position: "fixed",
             zIndex: "9",
           }}
