@@ -21,11 +21,11 @@ function ChooseUs() {
                 <h4>Why Choose Us</h4>
                 <h2>Best valued deals you will ever find</h2>
                 <p>
-                  Discover the best deals you'll ever find with our unbeatable
-                  offers. We're dedicated to providing you with the best value
+                  Discover the best deals youll ever find with our unbeatable
+                  offers. Were dedicated to providing you with the best value
                   for your money, so you can enjoy top-quality services and
                   products without breaking the bank. Our deals are designed to
-                  give you the ultimate renting experience, so don't miss out on
+                  give you the ultimate renting experience, so dont miss out on
                   your chance to save big.
                 </p>
                 <a href="#home">

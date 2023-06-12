@@ -47,10 +47,10 @@ function PlanTrip() {
                   src={Drive}
                   alt="icon_img"
                 />
-                <h3>Let's Drive</h3>
+                <h3>Lets Drive</h3>
                 <p>
-                  Whether you're hitting the open road, we've got you covered
-                  with our wide range of cars
+                  Whether youre hitting the open road, weve got you covered with
+                  our wide range of cars
                 </p>
               </div>
             </div>

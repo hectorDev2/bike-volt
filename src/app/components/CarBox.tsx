@@ -1,10 +1,11 @@
+"use client";
 import { useState } from "react";
 
-function CarBox({ data, carID }) {
+function CarBox({ data, carID }: any) {
   const [carLoad, setCarLoad] = useState(true);
   return (
     <>
-      {data[carID].map((car, id) => (
+      {data[carID].map((car: any, id: any) => (
         <div key={id} className="box-cars">
           {/* car */}
           <div className="pick-car">
