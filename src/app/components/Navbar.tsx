@@ -5,9 +5,40 @@ import Link from "next/link";
 import Image from "next/image";
 import { CgMenuRightAlt } from "react-icons/cg";
 import { FaRegWindowClose } from "react-icons/fa";
+import { usePathname } from "next/navigation";
+import { motion } from "framer-motion";
+
+const routes = [
+  {
+    href: "/",
+    title: "Home",
+  },
+  {
+    href: "/equipo",
+    title: "Nuestro equipo",
+  },
+  {
+    href: "/models",
+    title: "Modelos",
+  },
+  {
+    href: "/testimonials",
+    title: "Testimonios",
+  },
+  {
+    href: "/contact",
+    title: "Contacto",
+  },
+  {
+    href: "/about",
+    title: "Sobre nosotros",
+  },
+];
 
 function Navbar() {
+  const pathname = usePathname();
   const [nav, setNav] = useState(false);
+  console.log(pathname, "pathss");
 
   const openNav = () => {
     setNav(!nav);
@@ -22,36 +53,18 @@ function Navbar() {
             <FaRegWindowClose />
           </div>
           <ul className="mobile-navbar__links">
-            <li>
-              <Link onClick={openNav} href="/">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link onClick={openNav} href="/about">
-                About
-              </Link>
-            </li>
-            <li>
-              <Link onClick={openNav} href="/models">
-                Models
-              </Link>
-            </li>
-            <li>
-              <Link onClick={openNav} href="/testimonials">
-                Testimonials
-              </Link>
-            </li>
-            <li>
-              <Link onClick={openNav} href="/team">
-                Our Team
-              </Link>
-            </li>
-            <li>
-              <Link onClick={openNav} href="/contact">
-                Contact
-              </Link>
-            </li>
+            {routes.map(({ href, title }) => (
+              <motion.li
+                className={`${
+                  href === pathname ? "text-[#E0120A]" : "text-white"
+                } hover:text-[#ff0336] cursor-pointer `}
+                key={title}
+              >
+                <Link onClick={openNav} href={href}>
+                  {title}
+                </Link>
+              </motion.li>
+            ))}
           </ul>
         </div>
 
@@ -63,49 +76,28 @@ function Navbar() {
             position: "fixed",
             zIndex: "9",
           }}
-          className="navbar "
+          className="navbar"
         >
           <div className="navbar__img">
             <Link href="/" onClick={() => window.scrollTo(0, 0)}>
               <Image src={Logo} alt="logo-img" />
             </Link>
           </div>
-          <ul className="navbar__links">
-            <li>
-              <Link className="home-link" href="/">
-                Home
-              </Link>
-            </li>
-            <li>
-              {" "}
-              <Link className="about-link" href="/about">
-                About
-              </Link>
-            </li>
-            <li>
-              {" "}
-              <Link className="models-link" href="/models">
-                Vehicle Models
-              </Link>
-            </li>
-            <li>
-              {" "}
-              <Link className="testi-link" href="/testimonials">
-                Testimonials
-              </Link>
-            </li>
-            <li>
-              {" "}
-              <Link className="team-link" href="/equipo">
-                Our Team
-              </Link>
-            </li>
-            <li>
-              {" "}
-              <Link className="contact-link" href="/contact">
-                Contact
-              </Link>
-            </li>
+          <ul className="flex gap-2 justify-evenly navbar__links">
+            {routes.map(({ title, href }) => (
+              <li
+                className={` ${
+                  href === pathname ? "text-[#E0120A]" : "text-white"
+                } hover:text-[#ff0336] cursor-pointer `}
+              >
+                <Link
+                  className={`${href == pathname && "text-[white]"}`}
+                  href={href}
+                >
+                  {title}
+                </Link>
+              </li>
+            ))}
           </ul>
           <div className="navbar__buttons">
             <Link className="navbar__buttons__sign-in" href="/">
