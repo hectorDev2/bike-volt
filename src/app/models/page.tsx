@@ -8,14 +8,13 @@ import HeroPages from "../components/HeroPages";
 import { PageWrapper } from "../components/PageWrapper";
 import { motion } from "framer-motion";
 import { images, variants } from "@/animations";
-import Navbar from "../components/Navbar";
 
 export default function Models() {
   return (
     <>
+      <HeroPages name="Vehicle Models" />
       <PageWrapper>
         <section className="models-section">
-          <HeroPages name="Vehicle Models" />
           <div className="container">
             <motion.div
               variants={variants}
