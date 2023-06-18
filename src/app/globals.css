@@ -78,7 +78,6 @@ body {
 }
 
 .navbar {
-  max-width: 133rem;
   width: 100%;
   height: auto;
   display: flex;
@@ -119,8 +118,9 @@ body {
   transition: all 0.3s;
 }
 
+
 .navbar__links a:hover {
-  color: #ff4d30;
+  color: #ffffff;
 }
 
 @media (max-width: 1000px) {
@@ -427,7 +427,7 @@ body {
   z-index: 4;
   color: white;
   border-radius: 5px;
-  background-image: url("/src/images/book-car/book-bg.png");
+  background-image: url("/images/book-car/book-bg.png/");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1234,7 +1234,7 @@ body {
 .choose-section {
   background-color: white;
   padding: 2rem 0 10rem 0;
-  background-image: url("/src/images/chooseUs/bg.png");
+  background-image: url("/images/chooseUs/bg.png/");
   background-position: -225px 255px;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1490,7 +1490,7 @@ body {
 }
 
 .faq-section {
-  background-image: url("/src/images/faq/car.png");
+  background-image: url("/images/faq/car.png/");
   padding: 10rem 0;
   background-size: auto;
   background-repeat: no-repeat;
@@ -1603,7 +1603,8 @@ body {
 }
 
 .download-section {
-  background-image: url("/src/images/banners/bg02.png");
+
+  background-image: url("/images/banners/bg02.png/");
   background-color: #f8f8f8;
   background-position: top center;
   background-repeat: no-repeat;
@@ -1824,7 +1825,7 @@ footer {
 .hero-pages {
   width: 100%;
   height: 100%;
-  background-image: url("/src/images/hero/heroes-bg.png");
+  background-image: url("/images/hero/heroes-bg.png/");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1998,7 +1999,7 @@ footer {
   display: flex;
   width: 100%;
   height: 20rem;
-  background-image: url("/src/images/banners/book-banner.png");
+  background-image: url("/images/banners/book-banner.png/");
   position: relative;
   margin-top: 7rem;
 }
@@ -2275,7 +2276,7 @@ footer {
   margin: 0 auto;
   color: #010103;
   padding: 10rem 2rem;
-  background-image: url("/src/images/banners/bg-contact.png");
+  background-image: url("/images/banners/bg-contact.pngP/");
   background-size: auto;
   background-position: center center;
   background-repeat: no-repeat;
