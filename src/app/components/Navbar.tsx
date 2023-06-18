@@ -86,6 +86,7 @@ function Navbar() {
           <ul className="flex gap-2 justify-evenly navbar__links">
             {routes.map(({ title, href }) => (
               <li
+                key={title}
                 className={` ${
                   href === pathname ? "text-[#E0120A]" : "text-white"
                 } hover:text-[#ff0336] cursor-pointer `}

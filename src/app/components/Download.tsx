@@ -1,5 +1,5 @@
-import Img1 from "../images/download/appstore.svg";
-import Img2 from "../images/download/googleapp.svg";
+import Img1 from "../../../public/images/download/appstore.svg";
+import Img2 from "../../../public/images/download/googleapp.svg";
 
 function Download() {
   return (
