@@ -7,7 +7,6 @@ import Testimonials from "../components/Testimonials";
 export default function TestimonialsPage() {
   return (
     <>
-      <Navbar />
       <PageWrapper>
         <section className="testimonial-page">
           <HeroPages name="Testimonials" />

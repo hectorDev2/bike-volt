@@ -6,7 +6,6 @@ import { PageWrapper } from "../components/PageWrapper";
 const Contact = () => {
   return (
     <>
-      <Navbar />
       <PageWrapper>
         <section className="contact-page">
           <HeroPages name="Contact" />

@@ -24,7 +24,6 @@ const Team = () => {
   ];
   return (
     <>
-      <Navbar />
       <PageWrapper>
         <section className="team-page">
           <HeroPages name="Our Team" />
