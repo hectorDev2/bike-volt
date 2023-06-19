@@ -7,14 +7,13 @@ import Box1 from "../../../public/images/about/icon1.png";
 import Box2 from "../../../public/images/about/icon2.png";
 import Box3 from "../../../public/images/about/icon3.png";
 import { PageWrapper } from "../components/PageWrapper";
-import Navbar from "../components/Navbar";
 
 export default function About() {
   return (
     <>
+      <HeroPages name="About" />
       <PageWrapper>
         <section className="about-page">
-          <HeroPages name="About" />
           <div className="container">
             <div className="about-main">
               <Image

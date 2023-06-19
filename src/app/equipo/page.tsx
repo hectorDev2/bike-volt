@@ -24,9 +24,9 @@ const Team = () => {
   ];
   return (
     <>
+      <HeroPages name="Our Team" />
       <PageWrapper>
         <section className="team-page">
-          <HeroPages name="Our Team" />
           <div className="container">
             <motion.div
               variants={variants}

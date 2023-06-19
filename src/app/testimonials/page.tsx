@@ -7,9 +7,9 @@ import Testimonials from "../components/Testimonials";
 export default function TestimonialsPage() {
   return (
     <>
+      <HeroPages name="Testimonials" />
       <PageWrapper>
         <section className="testimonial-page">
-          <HeroPages name="Testimonials" />
           <Testimonials />
           <div className="book-banner">
             <div className="book-banner__overlay"></div>

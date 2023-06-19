@@ -72,7 +72,7 @@ function Navbar() {
 
         <div
           style={{
-            background: "#ff4d30",
+            background: "var(--primaryColor)",
             position: "fixed",
             zIndex: "9",
           }}
@@ -101,10 +101,10 @@ function Navbar() {
             ))}
           </ul>
           <div className="navbar__buttons">
-            <Link className="navbar__buttons__sign-in" href="/">
+            <Link className="navbar__buttons__sign-in" href="/auth">
               Sign In
             </Link>
-            <Link className="navbar__buttons__register" href="/">
+            <Link className="navbar__buttons__register" href="/auth">
               Register
             </Link>
           </div>
